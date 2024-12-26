@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "python-chatbot"
+version = "0.1.0"
+description = "A local chatbot that you can use without having to use ChatGPT."
+authors = ["Hernaldo Morales <morales23h@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+llama-cpp-python = "^0.3.5"
+langchain = "^0.3.13"
+langchain-community = "^0.3.13"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
