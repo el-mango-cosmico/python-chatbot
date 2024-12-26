@@ -39,11 +39,25 @@ Follow these steps to set up and start using the chatbot!
    make activate
    ```
 
+4. **Download a Model** *(Required)*
+   The chatbot requires a model to function. Ensure you download a model before running the script. For example, to download the `llama-2-7b-chat.Q4_K_M.gguf` model:
+
+   - Run the command:
+     ```bash
+     make download-model
+     ```
+
+   - When prompted:
+     - Enter the Hugging Face repository: `TheBloke/Llama-2-7b-Chat-GGUF`
+     - Enter the model filename: `llama-2-7b-chat.Q4_K_M.gguf`
+
+   The model will be downloaded and saved into the `models/` directory.
+
 ---
 
 ## 🏃‍♂️ Running the Chatbot
 
-Start the chatbot with:
+Once a model is downloaded, you can start the chatbot with:
 ```bash
 poetry run chatbot
 ```
@@ -52,27 +66,10 @@ Type your questions and enjoy the interaction! Type `exit` to quit the session.
 
 ---
 
-## 📦 Adding New Models
-
-To add new models to your chatbot, use the `download-model` Makefile command. Here’s an example for downloading the `llama-2-7b-chat.Q4_K_M.gguf` model from the `TheBloke` repository:
-
-1. Run the command:
-   ```bash
-   make download-model
-   ```
-
-2. When prompted:
-   - Enter the Hugging Face repository: `TheBloke/Llama-2-7b-Chat-GGUF`
-   - Enter the model filename: `llama-2-7b-chat.Q4_K_M.gguf`
-
-3. The model will be downloaded and saved into the `models/` directory.
-
----
-
 ## 🛡️ Troubleshooting
 
 - **Poetry Not Installed**: If you see an error about Poetry, ensure it's installed correctly. Visit the [Poetry Docs](https://python-poetry.org/docs/#installation).
-- **Model File Missing**: Ensure the required model files are downloaded into the `models/` directory.
+- **Model Not Found**: If the script fails with a "model not found" error, ensure you've downloaded the required model into the `models/` directory.
 
 ---
 
