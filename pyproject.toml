@@ -10,6 +10,7 @@ python = "^3.12"
 llama-cpp-python = "^0.3.5"
 langchain = "^0.3.13"
 langchain-community = "^0.3.13"
+huggingface-hub = "^0.27.0"
 
 
 [build-system]
