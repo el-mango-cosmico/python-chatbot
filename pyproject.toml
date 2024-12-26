@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "A local chatbot that you can use without having to use ChatGPT."
 authors = ["Hernaldo Morales <morales23h@gmail.com>"]
 readme = "README.md"
+packages = [{include = "app"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
@@ -16,3 +17,6 @@ huggingface-hub = "^0.27.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+chatbot = "app.chatbot:main"
